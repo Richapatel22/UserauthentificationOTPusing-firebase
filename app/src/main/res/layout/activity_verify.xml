@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".verify">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="148dp"
+            android:paddingBottom="15dp"
+            android:text="Verify Phone"
+            android:textSize="23sp" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Didn't recieve the code? Request again"
+           android:layout_marginStart="100dp" />
+    <com.chaos.view.PinView
+        android:id="@+id/id_otp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:layout_marginStart="10dp"
+        android:cursorVisible="true"
+        android:inputType="number"
+        android:itemBackground="#F4F6F9"
+        android:textColor="#1F1F1F"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemRadius="5dp"
+        app:lineColor="#2196f3" />
+
+    <Button
+        android:id="@+id/verifybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="VERIFY AND CONTINUE" />
+
+
+</LinearLayout>
